@@ -8,6 +8,7 @@
 	<properties>
 		<org.springframework-version>4.3.3.RELEASE</org.springframework-version>
 	</properties>
+
 	<dependencies>
 
 		<!-- spring container(core) -->
@@ -31,12 +32,6 @@
 			<version>${org.springframework-version}</version>
 		</dependency>
 
-		<!-- jstl -->
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
-		</dependency>
 
 		<!-- Oracle JDBC -->
 		<dependency>
@@ -50,6 +45,13 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
 			<version>${org.springframework-version}</version>
+		</dependency>
+
+		<!-- jstl -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
 		</dependency>
 
 		<!-- MyBatis -->

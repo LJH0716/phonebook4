@@ -25,7 +25,7 @@ public class PhoneService {
 	
 	//전화번호 리스트
 	public List<PersonVo> getPersonList(){
-		
+		System.out.println("PhoneService>getPersonList()");
 		List<PersonVo> personList = phoneDao.getPersonList();
 		
 		return personList;
@@ -42,6 +42,7 @@ public class PhoneService {
 	
 	//전화번호 삭제
 	public int personDelete(int no) {
+		System.out.println("PhoneService>personDelete()");
 		
 		int count = phoneDao.personDelete(no);
 		
@@ -50,6 +51,7 @@ public class PhoneService {
 	
 	//전화번호 수정폼(정보가져오기)
 	public PersonVo getPerson(int no) {
+		System.out.println("PhoneService>getPerson()");
 		
 		PersonVo personVo = phoneDao.getPerson(no);
 		
@@ -58,7 +60,8 @@ public class PhoneService {
 	
 	//전화번호 수정
 	public int personUpdate(PersonVo personVo) {
-	
+		System.out.println("PhoneService>personUpdate()");
+		
 		int count = phoneDao.personUpdate(personVo);
 		
 		return count;
